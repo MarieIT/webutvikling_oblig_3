@@ -1,1 +1,19 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0 auto;
+}
+body header figure {
+  margin: 0;
+  background-color: #50653C;
+}
+
+.main-nav {
+  background-color: #6d9f52;
+}
+
+.category {
+  background-color: #6d9f52;
+}
+
+.category-button {
+  background-color: #B7EB6E;
+}/*# sourceMappingURL=style.css.map */
