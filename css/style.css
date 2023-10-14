@@ -16,4 +16,8 @@ body header figure {
 
 .category-button {
   background-color: #B7EB6E;
+}
+
+.grid-container {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
