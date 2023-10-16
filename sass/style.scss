@@ -1,22 +1,35 @@
 body{
     margin: 0 auto; 
     header{
+        grid-area: header;
         figure{
             margin: 0; 
             background-color: #50653C;
         }
     }
+    main{
+        grid-area: main; 
+    }
+    footer{
+        grid-area: footer; 
+    }
 }
+
 .main-nav{
     background-color: #6d9f52;
 }
+
 .category{
     background-color: #6d9f52; 
+    grid-area: nav-category; 
 }
+
 .category-button{
     background-color: #B7EB6E;
 }
-.grid-container{
+
+/* Grid */
+#grid-container{
     display: grid; 
-    
+    grid-template-areas: "header" "nav-category" "main" "footer";
 }

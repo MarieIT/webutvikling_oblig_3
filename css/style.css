@@ -1,9 +1,18 @@
 body {
   margin: 0 auto;
 }
+body header {
+  grid-area: header;
+}
 body header figure {
   margin: 0;
   background-color: #50653C;
+}
+body main {
+  grid-area: main;
+}
+body footer {
+  grid-area: footer;
 }
 
 .main-nav {
@@ -12,12 +21,15 @@ body header figure {
 
 .category {
   background-color: #6d9f52;
+  grid-area: nav-category;
 }
 
 .category-button {
   background-color: #B7EB6E;
 }
 
-.grid-container {
+/* Grid */
+#grid-container {
   display: grid;
+  grid-template-areas: "header" "nav-category" "main" "footer";
 }/*# sourceMappingURL=style.css.map */
