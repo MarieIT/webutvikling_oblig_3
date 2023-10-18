@@ -32,4 +32,8 @@ body footer {
 #grid-container {
   display: grid;
   grid-template-areas: "header" "nav-category" "main" "footer";
+}
+
+#tips-og-tricks {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

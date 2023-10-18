@@ -33,3 +33,7 @@ body{
     display: grid; 
     grid-template-areas: "header" "nav-category" "main" "footer";
 }
+
+#tips-og-tricks{
+    display: flex;
+}
