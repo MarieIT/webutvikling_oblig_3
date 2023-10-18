@@ -1,10 +1,18 @@
+
+/*Imports og variabler*/
+@import "partials/colors";
+@import "partials/mixins";
+
 body{
     margin: 0 auto; 
     header{
         grid-area: header;
         figure{
             margin: 0; 
-            background-color: #50653C;
+            background-color: $header-darker-green;
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
         }
     }
     main{
@@ -12,11 +20,14 @@ body{
     }
     footer{
         grid-area: footer; 
+        background-color: $footer-medium-green; 
     }
 }
 
+
+
 .main-nav{
-    background-color: #6d9f52;
+    background-color: $main-nav-green;
 }
 
 .category{
@@ -36,4 +47,26 @@ body{
 
 #tips-og-tricks{
     display: flex;
+}
+
+img{
+    @include img;
+}
+
+#top-bar{
+    padding: 0 0.8rem;
+    
+    #pakke{
+        align-self: center; 
+        font-size: 1.5rem; 
+        margin-right: 0.7rem; 
+       
+    }
+    #applepay{
+        align-self: center; 
+        font-size: 2rem;
+        margin: 0 0.7rem 0 auto; 
+    }
+
+    
 }

@@ -1,3 +1,4 @@
+/*Imports og variabler*/
 body {
   margin: 0 auto;
 }
@@ -7,12 +8,16 @@ body header {
 body header figure {
   margin: 0;
   background-color: #50653C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body main {
   grid-area: main;
 }
 body footer {
   grid-area: footer;
+  background-color: #5D7E3D;
 }
 
 .main-nav {
@@ -36,4 +41,26 @@ body footer {
 
 #tips-og-tricks {
   display: flex;
+}
+
+img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top-bar {
+  padding: 0 0.8rem;
+}
+#top-bar #pakke {
+  align-self: center;
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+}
+#top-bar #applepay {
+  align-self: center;
+  font-size: 2rem;
+  margin: 0 0.7rem 0 auto;
 }/*# sourceMappingURL=style.css.map */
