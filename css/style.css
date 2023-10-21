@@ -88,6 +88,8 @@ body footer ol li {
   display: grid;
   grid-template-areas: "tursko-brune tursko-svarte" "tursko-brune-text tursko-svarte-text";
   gap: 10px;
+  padding: 0px 10px;
+  margin: 20px 0px;
 }
 #tips-og-tricks img {
   border-style: solid;
