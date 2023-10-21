@@ -1,4 +1,6 @@
-/*Imports og variabler*/
+@charset "UTF-8";
+/* Imports og variabler */
+/* Body med header (top-bar), main og footer */
 body {
   margin: 0 auto;
 }
@@ -19,30 +21,97 @@ body footer {
   grid-area: footer;
   background-color: #5D7E3D;
 }
-
-.main-nav {
-  background-color: #6d9f52;
+body footer ol li {
+  list-style: none;
 }
 
+/* Hovednavigasjonen med symboler og logo */
+.main-nav {
+  background-color: #5D8046;
+}
+.main-nav ol {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav ol li {
+  list-style: none;
+  align-self: center;
+  font-size: 1.8rem;
+}
+.main-nav ol #søksymbol {
+  padding: 12px;
+}
+.main-nav ol #handlekurv {
+  padding: 12px;
+}
+.main-nav ol #hamburgermeny {
+  padding: 12px;
+}
+.main-nav #logo {
+  width: 100%;
+  max-width: 140px;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+/* Kategoriene herre, dame og barn valgene - navigasjon */
 .category {
-  background-color: #6d9f52;
+  background-color: #5D8046;
   grid-area: nav-category;
+  display: flex;
+  justify-content: space-around;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: black;
 }
 
 .category-button {
   background-color: #B7EB6E;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
 }
 
-/* Grid */
+/* Grid container med arealer; header, nav category, main og footer */
 #grid-container {
   display: grid;
   grid-template-areas: "header" "nav-category" "main" "footer";
 }
 
+/* Artikkelseksjonen med bilder og tekst */
 #tips-og-tricks {
-  display: flex;
+  display: grid;
+  grid-template-areas: "tursko-brune tursko-svarte" "tursko-brune-text tursko-svarte-text";
+  gap: 10px;
+}
+#tips-og-tricks img {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+#tips-og-tricks #tursko-brune {
+  grid-area: tursko-brune;
+  height: 11em;
+}
+#tips-og-tricks #tursko-svarte {
+  grid-area: tursko-svarte;
+  height: 11em;
+}
+#tips-og-tricks #tursko-brune-text {
+  grid-area: tursko-brune-text;
+  margin: 0;
+}
+#tips-og-tricks #tursko-svarte-text {
+  grid-area: tursko-svarte-text;
+  margin: 0;
 }
 
+/* Importert fra mixins */
 img {
   width: 100%;
   max-width: 450px;
@@ -51,16 +120,88 @@ img {
   margin-right: auto;
 }
 
+/* Stilsetting på header (top bar) med tekst og symboler */
 #top-bar {
   padding: 0 0.8rem;
+  font-size: 0.9rem;
 }
 #top-bar #pakke {
   align-self: center;
-  font-size: 1.5rem;
-  margin-right: 0.7rem;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
 }
 #top-bar #applepay {
   align-self: center;
+  font-size: 1.8rem;
+  margin: 0 0.5rem 0 auto;
+}
+
+/* Salgsseksjonen med bilde (bakgrunn) og med tekst oppå */
+#salgsseksjon {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+#salgsseksjon span {
+  font-size: 3rem;
+}
+#salgsseksjon p {
+  background-image: url(../img/sale-on-shoes.jpg);
+  background-color: wheat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-size: 2rem;
-  margin: 0 0.7rem 0 auto;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  padding: 4rem;
+  margin: 32px 10px 5px 10px;
+}
+
+/* Nyhetsseksjon med bilder og tilhørende tekst */
+#nyhetseksjon {
+  display: grid;
+  grid-template-areas: "nyheter nyheter nyheter" "støvel-img joggesko-img pensko-img" "støvel-text joggesko-text pensko-text";
+  grid-column: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 0 10px;
+  margin: 20px 0px;
+}
+#nyhetseksjon h3 {
+  grid-area: nyheter;
+  text-align: center;
+  background-color: #7cb068;
+  padding: 15px 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px gray;
+  width: 35%;
+  justify-self: center;
+  font-weight: 600;
+}
+#nyhetseksjon #støvler-nyheter {
+  grid-area: støvel-img;
+  height: 11em;
+}
+#nyhetseksjon #støvler-text {
+  grid-area: støvel-text;
+  margin: 0;
+}
+#nyhetseksjon #joggesko-nyheter {
+  grid-area: joggesko-img;
+  height: 11em;
+}
+#nyhetseksjon #joggesko-text {
+  grid-area: joggesko-text;
+  margin: 0;
+}
+#nyhetseksjon a {
+  grid-area: pensko-img;
+}
+#nyhetseksjon a img {
+  height: 11em;
+}
+#nyhetseksjon #pensko-text {
+  grid-area: pensko-text;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

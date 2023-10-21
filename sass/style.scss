@@ -1,8 +1,9 @@
 
-/*Imports og variabler*/
+/* Imports og variabler */
 @import "partials/colors";
 @import "partials/mixins";
 
+/* Body med header (top-bar), main og footer */
 body{
     margin: 0 auto; 
     header{
@@ -21,52 +22,199 @@ body{
     footer{
         grid-area: footer; 
         background-color: $footer-medium-green; 
+        ol{
+            li{
+                list-style: none; 
+            }
+        }
     }
 }
 
-
-
+/* Hovednavigasjonen med symboler og logo */
 .main-nav{
     background-color: $main-nav-green;
+    ol{
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        justify-content: space-between; 
+        li{
+            list-style: none; 
+            align-self: center; 
+            font-size: 1.8rem;
+        }
+
+    #søksymbol{
+        padding: 12px; 
+    }
+
+    #handlekurv{
+        padding: 12px; 
+    } 
+
+    #hamburgermeny{
+        padding: 12px; 
+    }
+
+    }
+    #logo{
+        width: 100%; 
+        max-width: 140px; 
+        align-self: center; 
+        font-size: 1.5rem; 
+    }
 }
 
+/* Kategoriene herre, dame og barn valgene - navigasjon */
 .category{
-    background-color: #6d9f52; 
+    background-color: $main-nav-green; 
     grid-area: nav-category; 
+    display: flex; 
+    justify-content: space-around; 
+    @include border-top; 
 }
-
 .category-button{
     background-color: #B7EB6E;
+    font-size: 1.3rem; 
+    border-radius: 5px;
+    padding: 0.3rem;  
+    @include category-buttons-margins;
+    text-decoration: none;
 }
 
-/* Grid */
+/* Grid container med arealer; header, nav category, main og footer */
 #grid-container{
     display: grid; 
     grid-template-areas: "header" "nav-category" "main" "footer";
 }
 
+/* Artikkelseksjonen med bilder og tekst */
 #tips-og-tricks{
-    display: flex;
+    display: grid; 
+    grid-template-areas: "tursko-brune tursko-svarte" "tursko-brune-text tursko-svarte-text";
+    gap: 10px; 
+    
+    img{
+        @include artikkel-image-border;
+    }
+
+    #tursko-brune{
+        grid-area: tursko-brune;
+        height: 11em; 
+    }
+
+    #tursko-svarte{
+        grid-area: tursko-svarte; 
+        height: 11em; 
+    }
+
+    #tursko-brune-text{
+        grid-area: tursko-brune-text; 
+        margin: 0; 
+    }
+
+    #tursko-svarte-text{
+        grid-area: tursko-svarte-text; 
+        margin: 0; 
+    }
 }
 
-img{
+/* Importert fra mixins */
+img {
     @include img;
 }
 
+/* Stilsetting på header (top bar) med tekst og symboler */
 #top-bar{
     padding: 0 0.8rem;
+    font-size: 0.9rem; 
     
     #pakke{
         align-self: center; 
-        font-size: 1.5rem; 
-        margin-right: 0.7rem; 
+        font-size: 1.3rem; 
+        margin-right: 0.5rem; 
        
     }
     #applepay{
         align-self: center; 
-        font-size: 2rem;
-        margin: 0 0.7rem 0 auto; 
+        font-size: 1.8rem;
+        margin: 0 0.5rem 0 auto; 
     }
 
     
 }
+
+/* Salgsseksjonen med bilde (bakgrunn) og med tekst oppå */
+#salgsseksjon{
+    position: relative; 
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    margin: 0;
+
+    span{
+        font-size: 3rem;
+    }
+    p{
+        background-image: url(../img/sale-on-shoes.jpg);
+        background-color: wheat;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-size: 2rem;
+        text-align-last: center;
+        padding: 4rem;
+        margin: 32px 10px 5px 10px;
+    }
+}
+
+/* Nyhetsseksjon med bilder og tilhørende tekst */ 
+#nyhetseksjon{
+    display: grid; 
+    grid-template-areas: "nyheter nyheter nyheter" "støvel-img joggesko-img pensko-img" "støvel-text joggesko-text pensko-text";
+    grid-column: 1fr 1fr 1fr;
+    gap: 10px; 
+    padding: 0 10px;
+    margin: 20px 0px;
+    
+    h3{
+        grid-area: nyheter;
+        text-align: center; 
+        background-color: $light-green;
+        padding: 15px 10px; 
+        border: 2px solid black; 
+        box-shadow: 5px 5px 10px gray;
+        width: 35%;
+        justify-self: center;
+        font-weight: 600;  
+    }
+    #støvler-nyheter{
+        grid-area: støvel-img;
+        height: 11em;  
+        
+    }
+    #støvler-text{
+        grid-area: støvel-text;
+        margin: 0; 
+    }
+   
+    #joggesko-nyheter{
+        grid-area: joggesko-img;
+        height: 11em; 
+    }
+    #joggesko-text{
+        grid-area: joggesko-text;
+        margin: 0; 
+    }
+    
+    a{
+        grid-area: pensko-img;
+        img{
+            height: 11em; 
+        }
+    }
+
+    #pensko-text{
+        grid-area: pensko-text;
+        margin: 0; 
+    }
+    }
