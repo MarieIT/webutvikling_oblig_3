@@ -3,110 +3,144 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/fonts/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fonts/css/brands.css" rel="stylesheet">
+        <link href="css/fonts/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title> 
-            skodegmiljøvennlig-levering-retur
+        <title>
+            skodegmiljøvennlig - forside 
         </title>
     </head>
     <body>
-        <!--Toppbaren til nettsiden, ikke klikkbar, kun for informasjon-->
-        <header>
-            <figure id="top-bar">
-                <i class="fa-regular fa-box" id="pakke"></i> 
-                <p> 3-5 dager levering </p>
-                <i class="fa-brands fa-apple-pay" id="applepay"></i>
-                <p> Betaling med applepay </p>
-            </figure>         
-        </header>
-        <!--Toppmenyen, logo klikkbar-->
-        <nav class="main-nav">
-            <ol>
-                <li>
-                    <a href="index.html">
-                        <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
-                    </a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-bars"></i>
-                    <a href="#"></a>
-                    </a>
-                </li>
-            </ol>
-        </nav>
+    <!-- Alle ikoner er hentet fra fontawesome-->
+    <!--Toppbaren til nettsiden, ikke klikkbar, kun for informasjon-->
+    <!--Teksten til levering/retur er hentet fra Lorum Ipsum (lipsum.com)-->
+            <header>
+                <figure id="top-bar">
+                    <i class="fa-regular fa-box" id="pakke"></i> 
+                    <p> 3-5 dager levering </p>
+                    <i class="fa-brands fa-apple-pay" id="applepay"></i>
+                    <p> Betaling med applepay </p>
+                </figure>
+                <!--Toppmenyen, logo klikkbar, går til hjemsiden-->
+                <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
+                <nav class="main-nav">
+                    <ol>
+                        <li>
+                            <a href="index.html">
+                                <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass" id="søksymbol"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-basket-shopping" id="handlekurv"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bars" id="hamburgermeny"></i>
+                            <a href="#"></a>
+                        </li>
+                    </ol>
+                </nav>         
+            </header>
+            
+            <!--Navigasjon mellom kategorier, herre, dame og barn-->
+            <nav class="category">
+                <a href="#" class="category-button">
+                    Herre
+                </a>
+                <a href="#" class="category-button">
+                    Dame
+                </a>
+                <a href="#" class="category-button">
+                    Barn
+                </a>
+            </nav>
         <main>
-            <!--Legg til ai generert levering og retur tekst-->
-            <article>
+        <!-- levering og retur artikkeler-->
+            <article id="levering">
                 <h2>Levering</h2>
                 <h5>Lorum ipsum</h5>
-                    <p>Lorum ipsum dolor sit amet</p>
+                    <p>Lorum ipsum dolor sit amet consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <h5>Duis Aute</h5>
-                    <p>Dyus aute</p>
+                    <p>Dyus aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </article>
-            <article>
+            <article id="retur">
                 <h2>Retur</h2>
-                    <p>Lorum ipsum dolor sit amet</p>
-                    <p>Dyus aute</p>
+                    <p>Lorum ipsum dolor sit amet consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam</p>
+                    <p>Dyus aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </article>
         </main>
         <!--Footer, med kundeservice, kontakt oss, betalingsmåter og logo-->
+        <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
         <footer>
-            <section>
+            <section id="kundeservice">
                 <h3>Kundeservice</h3>
-                <ol>
-                    <li>Levering</li>
-                    <li>Retur</li>
-                    <li>Ofte stilte spørsmål</li>
-                    <li>Størrelsesguide</li>
-                    <li>Finn butikk</li>
+                <ol id="kundeservice-innhold">
+                    <li>
+                        <a href="levering_return.html"><i class="fa-solid fa-caret-right"></i>Levering</a>
+                    </li>
+                    <li>
+                        <a href="levering_return.html"> <i class="fa-solid fa-caret-right"></i>Retur</a>
+                    </li>
+                    <li> <i class="fa-solid fa-caret-right"></i>Ofte stilte spørsmål</li>
+                    <li><i class="fa-solid fa-caret-right"></i>Størrelsesguide</li>
+                    <li><i class="fa-solid fa-caret-right"></i>Finn butikk</li>
                 </ol>
             </section>
-            <section>
+            <section id="kontakt-oss">
                 <h3>Kontakt oss</h3>
-                <p>Mail</p>
-                <a href="mailto:skodegmiljovennlig@gmail.com">Send email</a>
+                <p id="mail">Mail</p>
+                <a id="send-mail" href="mailto:skodegmiljovennlig@gmail.com">Send mail</a>
             </section>
-            <section>
+            <section id="betalingsmåter">
                 <h4>Betalingsmåter</h4>
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-paypal"></i>
-                <i class="fa-brands fa-apple-pay" id="applepay"></i>
+                <i class="fa-brands fa-cc-visa betalings-ikoner"></i>
+                <i class="fa-brands fa-paypal betalings-ikoner"></i>
+                <i class="fa-brands fa-apple-pay" Id="applepay-betalings-ikon"></i>
             </section>
-            <section>
+            <section id="sosiale-medier">
                 <h6>Sosiale medier</h6>
                 <ol> 
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-facebook sosiale-medier-ikoner"></i>
                             <p>Facebook</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-tiktok sosiale-medier-ikoner"></i>
                             <p>TikTok</p>
                         </a>  
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-youtube sosiale-medier-ikoner"></i>
                             <p>YouTube</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-instagram sosiale-medier-ikoner"></i>
                             <p>Instagram</p>
                         </a>
                     </li>  
                 </ol>
             </section>
-            <img src="#" alt="logo til skodegmiljøvennlig">
+            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
         </footer>
     </body>
 </html>

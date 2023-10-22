@@ -59,55 +59,69 @@
         
         <main>
         <!--Bildeseksjon av pensko-->
-            <section>
+        <!--Alle bildene i denne artikkelen er fra https://leonardo.ai-->
+            <section id="produkt-side-bildeseksjon">
                 <figure>
-                    <img src="img/high-heel-shoe-news-section-product-page.jpg" alt="pensko"> 
-                    <i class="fa-regular fa-play"></i>
-                    <img src="img/high-heel-shoe-product-page.jpg" alt="pensko">
-                    <img src="img/high-heel-shoe-product-page-angle.jpg" alt="pensko">
+                    <img src="img/high-heel-shoe-news-section-product-page.jpg" alt="pensko" id="pensko-venstre" >
+                    <img src="img/high-heel-shoe-product-page.jpg" alt="pensko" id="pensko-midten">
+                    <img src="img/high-heel-shoe-product-page-angle.jpg" alt="pensko" id="pensko-høyre">
                 </figure>  
             
                 <!--pris, farge og størrelse lister-->
-                <h3> pris 250,- </h3>
-                <h6>Farger</h6>
-                <ol>
-                    <li>
-                        <img src="#" alt="blå">
-                        <img src="#" alt="oransj">
-                        <img src="#" alt="lilla">
+                <h3 id="pris"> Pris 250,-</h3>
+               
+                <ol id="farge-valg">
+                    <li id="farge-text">
+                        <h6>Farger:</h6>
+                    </li>
+                    <li class="farge-box" id="box-blå">
+                    </li>
+                    <li class="farge-box" id="box-orange">
+                    </li>
+                    <li class="farge-box" id="box-lilla">
                     </li>
                 </ol>
-                <h6>Størrelser</h6>
-                <ol>
-                    <li>
-                        <img src="#" alt="størrelse 36">
-                        <img src="#" alt="størrelse 38">
-                        <img src="#" alt="størrelse 39">
+                
+                <ol id="størrelse-valg">
+                    <li id="størrelse-text">
+                        <h6>Størrelser: </h6>
+                    </li>
+                    <li class="størrelse-box">
+                        36
+                    </li>
+                    <li class="størrelse-box">
+                        37
+                    </li>
+                    <li class="størrelse-box">
+                        38
                     </li>
                 </ol>
                 
                 <!--Legg i handlekurv-->
-                <figure>
+                <figure id="handlekurv">
                     <a href="#"> 
-                    </a>
-                    <i class="fa-solid fa-basket-shopping"></i>
+                     <i class="fa-solid fa-basket-shopping"></i>
                     <p>Legg i handlekurv</p>
+                    </a>
+                   
                 </figure>
                 
                 <!--Liste med tags-->
-                <ol>
+                <ol id="tags">
                     <li>Adidas</li>
                     <li>Pensko</li>
                     <li>Komfortabel</li>
                 </ol>
             
                 <!--Liste med beskrivelse og finn i butikk-->
-                <ol>
+                <ol id="mer-info">
                     <li>
                         <a href="#">
                         <i class="fa-solid fa-caret-right"></i>
                         <p>Beskrivelse</p>
-                        </a>
+                        </a> 
+                    </li>
+                    <li>
                         <a href="#">
                         <i class="fa-solid fa-caret-right"></i>
                         <p>Finn i butikk</p>
