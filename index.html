@@ -14,6 +14,7 @@
     </head>
     
     <body>
+        <!-- Alle ikoner er hentet fra fontawesome-->
         <div id="grid-container">
             <!--Toppbaren til nettsiden, ikke klikkbar, kun for informasjon-->
             <header>
@@ -94,61 +95,61 @@
             <!--Footer, med kundeservice, kontakt oss, betalingsmåter og logo-->
             <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
             <footer>
-                <section>
+                <section id="kundeservice">
                     <h3>Kundeservice</h3>
-                    <ol>
+                    <ol id="kundeservice-innhold">
                         <li>
-                            <a href="levering_return.html">Levering</a>
+                            <a href="levering_return.html"><i class="fa-solid fa-caret-right"></i>Levering</a>
                         </li>
                         <li>
-                            <a href="levering_return.html">Retur</a>
+                            <a href="levering_return.html"> <i class="fa-solid fa-caret-right"></i>Retur</a>
                         </li>
-                        <li>Ofte stilte spørsmål</li>
-                        <li>Størrelsesguide</li>
-                        <li>Finn butikk</li>
+                        <li> <i class="fa-solid fa-caret-right"></i>Ofte stilte spørsmål</li>
+                        <li><i class="fa-solid fa-caret-right"></i>Størrelsesguide</li>
+                        <li><i class="fa-solid fa-caret-right"></i>Finn butikk</li>
                     </ol>
                 </section>
-                <section>
+                <section id="kontakt-oss">
                     <h3>Kontakt oss</h3>
-                    <p>Mail</p>
-                    <a href="mailto:skodegmiljovennlig@gmail.com">Send email</a>
+                    <p id="mail">Mail</p>
+                    <a id="send-mail" href="mailto:skodegmiljovennlig@gmail.com">Send mail</a>
                 </section>
-                <section>
+                <section id="betalingsmåter">
                     <h4>Betalingsmåter</h4>
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <i class="fa-brands fa-paypal"></i>
-                    <i class="fa-brands fa-apple-pay"></i>
+                    <i class="fa-brands fa-cc-visa betalings-ikoner"></i>
+                    <i class="fa-brands fa-paypal betalings-ikoner"></i>
+                    <i class="fa-brands fa-apple-pay" Id="applepay-betalings-ikon"></i>
                 </section>
-                <section>
+                <section id="sosiale-medier">
                     <h6>Sosiale medier</h6>
                     <ol> 
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-square-facebook"></i>
+                                <i class="fa-brands fa-square-facebook sosiale-medier-ikoner"></i>
                                 <p>Facebook</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-tiktok sosiale-medier-ikoner"></i>
                                 <p>TikTok</p>
                             </a>  
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-youtube sosiale-medier-ikoner"></i>
                                 <p>YouTube</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-instagram sosiale-medier-ikoner"></i>
                                 <p>Instagram</p>
                             </a>
                         </li>  
                     </ol>
                 </section>
-                <img src="#" alt="logo til skodegmiljøvennlig">
+                <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
             </footer>
         </div>
     </body>

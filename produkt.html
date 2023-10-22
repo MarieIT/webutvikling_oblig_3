@@ -3,9 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/fonts/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fonts/css/brands.css" rel="stylesheet">
+        <link href="css/fonts/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>
-            skodegmiljøvennlig-produktside
+            skodegmiljøvennlig - produktside 
         </title>
     </head>
     <body>
@@ -16,29 +20,43 @@
                 <p> 3-5 dager levering </p>
                 <i class="fa-brands fa-apple-pay" id="applepay"></i>
                 <p> Betaling med applepay </p>
-            </figure>         
+            </figure>
+            <!--Toppmenyen, logo klikkbar, går til hjemsiden-->
+            <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
+            <nav class="main-nav">
+                <ol>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass" id="søksymbol"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-basket-shopping" id="handlekurv"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars" id="hamburgermeny"></i>
+                        <a href="#"></a>
+                    </li>
+                </ol>
+            </nav>         
         </header>
-        <!--Toppmenyen, logo klikkbar-->
-        <nav class="main-nav">
-            <ol>
-                <li>
-                    <a href="index.html">
-                        <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
-                    </a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-bars"></i>
-                    <a href="#"></a>
-                    </a>
-                </li>
-            </ol>
+        
+        <!--Navigasjon mellom kategorier, herre, dame og barn-->
+        <nav class="category">
+            <a href="#" class="category-button">
+                Herre
+            </a>
+            <a href="#" class="category-button">
+                Dame
+            </a>
+            <a href="#" class="category-button">
+                Barn
+            </a>
         </nav>
+        
         <main>
         <!--Bildeseksjon av pensko-->
             <section>
@@ -48,109 +66,113 @@
                     <img src="img/high-heel-shoe-product-page.jpg" alt="pensko">
                     <img src="img/high-heel-shoe-product-page-angle.jpg" alt="pensko">
                 </figure>  
-            </section>
-        <!--pris, farge og størrelse lister-->
-            <h3> pris 250,- </h3>
-            <h6>Farger</h6>
-            <ol>
-                <li>
-                    <img src="#" alt="blå">
-                    <img src="#" alt="oransj">
-                    <img src="#" alt="lilla">
-                </li>
-            </ol>
-            <h6>Størrelser</h6>
-            <ol>
-                <li>
-                    <img src="#" alt="størrelse 36">
-                    <img src="#" alt="størrelse 38">
-                    <img src="#" alt="størrelse 39">
-                </li>
-            </ol>
-        <!--Legg i handlekurv-->
-            <figure>
-                <a href="#"> 
-                </a>
-                <i class="fa-solid fa-basket-shopping"></i>
-                <p>Legg i handlekurv</p>
-            </figure>
-        <!--Liste med tags-->
-            <ol>
-                <li>Adidas</li>
-                <li>Pensko</li>
-                <li>Komfortabel</li>
-            </ol>
-        <!--Liste med beskrivelse og finn i butikk-->
-            <ol>
-                <li>
-                    <a href="#">
+            
+                <!--pris, farge og størrelse lister-->
+                <h3> pris 250,- </h3>
+                <h6>Farger</h6>
+                <ol>
+                    <li>
+                        <img src="#" alt="blå">
+                        <img src="#" alt="oransj">
+                        <img src="#" alt="lilla">
+                    </li>
+                </ol>
+                <h6>Størrelser</h6>
+                <ol>
+                    <li>
+                        <img src="#" alt="størrelse 36">
+                        <img src="#" alt="størrelse 38">
+                        <img src="#" alt="størrelse 39">
+                    </li>
+                </ol>
+                
+                <!--Legg i handlekurv-->
+                <figure>
+                    <a href="#"> 
+                    </a>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <p>Legg i handlekurv</p>
+                </figure>
+                
+                <!--Liste med tags-->
+                <ol>
+                    <li>Adidas</li>
+                    <li>Pensko</li>
+                    <li>Komfortabel</li>
+                </ol>
+            
+                <!--Liste med beskrivelse og finn i butikk-->
+                <ol>
+                    <li>
+                        <a href="#">
                         <i class="fa-solid fa-caret-right"></i>
                         <p>Beskrivelse</p>
-                    </a>
-                    <a href="#">
+                        </a>
+                        <a href="#">
                         <i class="fa-solid fa-caret-right"></i>
                         <p>Finn i butikk</p>
-                    </a>
-                </li>
-            </ol>
+                        </a>
+                    </li>
+                </ol>
+            </section>
         </main>
         <!--Footer, med kundeservice, kontakt oss, betalingsmåter og logo-->
         <footer>
-            <section>
+            <section id="kundeservice">
                 <h3>Kundeservice</h3>
-                <ol>
+                <ol id="kundeservice-innhold">
                     <li>
-                        <a href="levering_return.html">Levering</a>
+                        <a href="levering_return.html"><i class="fa-solid fa-caret-right"></i>Levering</a>
                     </li>
                     <li>
-                        <a href="levering_return.html">Retur</a>
+                        <a href="levering_return.html"> <i class="fa-solid fa-caret-right"></i>Retur</a>
                     </li>
-                    <li>Ofte stilte spørsmål</li>
-                    <li>Størrelsesguide</li>
-                    <li>Finn butikk</li>
+                    <li> <i class="fa-solid fa-caret-right"></i>Ofte stilte spørsmål</li>
+                    <li><i class="fa-solid fa-caret-right"></i>Størrelsesguide</li>
+                    <li><i class="fa-solid fa-caret-right"></i>Finn butikk</li>
                 </ol>
             </section>
-            <section>
+            <section id="kontakt-oss">
                 <h3>Kontakt oss</h3>
-                <p>Mail</p>
-                <a href="mailto:skodegmiljovennlig@gmail.com">Send email</a>
+                <p id="mail">Mail</p>
+                <a id="send-mail" href="mailto:skodegmiljovennlig@gmail.com">Send mail</a>
             </section>
-            <section>
+            <section id="betalingsmåter">
                 <h4>Betalingsmåter</h4>
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-paypal"></i>
-                <i class="fa-brands fa-apple-pay" id="applepay"></i>
+                <i class="fa-brands fa-cc-visa betalings-ikoner"></i>
+                <i class="fa-brands fa-paypal betalings-ikoner"></i>
+                <i class="fa-brands fa-apple-pay" Id="applepay-betalings-ikon"></i>
             </section>
-            <section>
+            <section id="sosiale-medier">
                 <h6>Sosiale medier</h6>
                 <ol> 
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-facebook sosiale-medier-ikoner"></i>
                             <p>Facebook</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-tiktok sosiale-medier-ikoner"></i>
                             <p>TikTok</p>
                         </a>  
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-youtube sosiale-medier-ikoner"></i>
                             <p>YouTube</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-instagram sosiale-medier-ikoner"></i>
                             <p>Instagram</p>
                         </a>
                     </li>  
                 </ol>
             </section>
-            <img src="#" alt="logo til skodegmiljøvennlig">
+            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
         </footer>
     </body>
 </html>

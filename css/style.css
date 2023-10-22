@@ -19,7 +19,80 @@ body main {
 }
 body footer {
   grid-area: footer;
-  background-color: #5D7E3D;
+  background-color: #5D8046;
+  display: grid;
+  grid-template-areas: "kundeservice kontakt-oss" "betalingsmåter sosiale-medier" "logo .";
+  grid-template-columns: 1fr 1fr;
+}
+body footer #kundeservice {
+  grid-area: kundeservice;
+}
+body footer #kundeservice h3 {
+  text-align: center;
+}
+body footer #kundeservice #kundeservice-innhold li a {
+  color: black;
+  text-decoration: none;
+}
+body footer #kundeservice #kundeservice-innhold li a i {
+  margin-right: 8px;
+}
+body footer #kundeservice #kundeservice-innhold li i {
+  margin-right: 8px;
+}
+body footer #kontakt-oss {
+  text-align: center;
+  grid-area: kontakt-oss;
+}
+body footer #mail {
+  text-align: center;
+}
+body footer #send-mail {
+  align-self: center;
+  color: black;
+}
+body footer #betalingsmåter {
+  text-align: center;
+  grid-area: betalingsmåter;
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+body footer #betalingsmåter h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 1rem;
+}
+body footer #betalingsmåter #applepay-betalings-ikon {
+  font-size: 3rem;
+}
+body footer #sosiale-medier {
+  justify-self: center;
+  grid-area: sosiale-medier;
+}
+body footer #sosiale-medier h6 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+body footer #sosiale-medier ol {
+  margin: 0;
+  padding: 0;
+}
+body footer #sosiale-medier ol li a {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  text-decoration: none;
+}
+body footer #sosiale-medier ol li a i {
+  margin-right: 8px;
+  align-self: center;
+  font-size: 1.5rem;
+}
+body footer #logo {
+  width: 100%;
+  max-width: 140px;
+  align-self: center;
+  font-size: 1.5rem;
+  grid-area: logo;
 }
 body footer ol li {
   list-style: none;
@@ -75,6 +148,7 @@ body footer ol li {
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
   text-decoration: none;
+  color: black;
 }
 
 /* Grid container med arealer; header, nav category, main og footer */
@@ -90,7 +164,8 @@ body footer ol li {
   gap: 10px;
   padding: 0px 10px;
   margin: 20px 0px;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 #tips-og-tricks img {
   border-style: solid;
@@ -108,10 +183,12 @@ body footer ol li {
 #tips-og-tricks #tursko-brune-text {
   grid-area: tursko-brune-text;
   margin: 0;
+  text-align: center;
 }
 #tips-og-tricks #tursko-svarte-text {
   grid-area: tursko-svarte-text;
   margin: 0;
+  text-align: center;
 }
 
 /* Importert fra mixins */
@@ -143,7 +220,7 @@ img {
 #salgsseksjon {
   position: relative;
   text-align: center;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   margin: 0;
 }
 #salgsseksjon span {
@@ -152,7 +229,7 @@ img {
 }
 #salgsseksjon p {
   background-image: url(../img/sale-on-shoes.jpg);
-  background-color: wheat;
+  background-color: rgb(54, 173, 18);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

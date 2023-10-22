@@ -22,3 +22,15 @@
     border-width: thin; 
     border-color: black; 
 }
+
+@mixin footer-icons-spacing{
+    margin-right: 8px; 
+}
+
+@mixin sosiale-medier-ikoner{
+    font-size: 1.5rem; 
+}
+
+@mixin betalings-ikoner{
+    font-size: 2rem; 
+}
