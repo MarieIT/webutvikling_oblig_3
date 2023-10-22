@@ -150,6 +150,16 @@ body{
         padding: 12px; 
     }
 
+    #søkebar{
+
+        input[type=text] {
+            padding: 10px; 
+            margin: 10px; 
+            border: solid thin black;
+            border-radius: 25px;
+        }
+    }
+
     #handlekurv{
         padding: 12px; 
     } 
@@ -157,6 +167,7 @@ body{
     #hamburgermeny{
         padding: 12px; 
     }
+
 
     }
     #logo{
@@ -533,6 +544,33 @@ img {
     #grid-container{
         display: grid; 
         grid-template-areas: "header header header" "nav-category nav-category nav-category" "main main main" "footer footer footer" ;
+    }
+
+    #søkebar{
+        order: 2;
+        margin-left: auto;
+    }
+
+    .main-nav{
+        ol{
+            li{
+                order: 3;
+            }
+            #logo-liste{
+                order: 1;
+            }
+        }
+    }
+
+    .category-button{
+        background-color: #B7EB6E;
+        font-size: 1.8rem; 
+        border-radius: 25px;
+        padding: 1.3rem;  
+        @include category-buttons-margins;
+        text-decoration: none;
+        color: black; 
+        margin: 0.8rem; 
     }
 }
     

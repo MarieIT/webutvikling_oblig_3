@@ -116,6 +116,12 @@ body footer ol li {
 .main-nav ol #søksymbol {
   padding: 12px;
 }
+.main-nav ol #søkebar input[type=text] {
+  padding: 10px;
+  margin: 10px;
+  border: solid thin black;
+  border-radius: 25px;
+}
 .main-nav ol #handlekurv {
   padding: 12px;
 }
@@ -466,5 +472,26 @@ img {
   #grid-container {
     display: grid;
     grid-template-areas: "header header header" "nav-category nav-category nav-category" "main main main" "footer footer footer";
+  }
+  #søkebar {
+    order: 2;
+    margin-left: auto;
+  }
+  .main-nav ol li {
+    order: 3;
+  }
+  .main-nav ol #logo-liste {
+    order: 1;
+  }
+  .category-button {
+    background-color: #B7EB6E;
+    font-size: 1.8rem;
+    border-radius: 25px;
+    padding: 1.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+    color: black;
+    margin: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
