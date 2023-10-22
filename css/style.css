@@ -90,6 +90,7 @@ body footer ol li {
   gap: 10px;
   padding: 0px 10px;
   margin: 20px 0px;
+  margin-top: 2rem;
 }
 #tips-og-tricks img {
   border-style: solid;
@@ -142,11 +143,12 @@ img {
 #salgsseksjon {
   position: relative;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   margin: 0;
 }
 #salgsseksjon span {
   font-size: 3rem;
+  font-weight: 800;
 }
 #salgsseksjon p {
   background-image: url(../img/sale-on-shoes.jpg);
@@ -155,6 +157,7 @@ img {
   background-position: center;
   background-size: cover;
   font-size: 2rem;
+  font-weight: 600;
   -moz-text-align-last: center;
        text-align-last: center;
   padding: 4rem;
