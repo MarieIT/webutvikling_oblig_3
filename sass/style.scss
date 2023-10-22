@@ -250,6 +250,12 @@ img {
         margin: 0 0.5rem 0 auto; 
     }
 
+    #headset{
+        align-self: center; 
+        font-size: 1.5rem;
+        margin: 0 0.5rem 0 auto; 
+    }
+
     
 }
 
@@ -511,6 +517,22 @@ img {
         margin-left: 15px; 
         margin-right: 15px; 
         margin-bottom: 40px; 
+    }
+}
+
+.hide-on-phone{
+    display: none; 
+}
+
+@media only screen and (min-width: 680px){
+
+    .hide-on-phone{
+        display: block; 
+    }
+    
+    #grid-container{
+        display: grid; 
+        grid-template-areas: "header header header" "nav-category nav-category nav-category" "main main main" "footer footer footer" ;
     }
 }
     
