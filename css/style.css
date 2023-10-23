@@ -235,7 +235,7 @@ img {
 #salgsseksjon {
   position: relative;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin: 0;
 }
 #salgsseksjon span {
@@ -243,7 +243,7 @@ img {
   font-weight: 800;
 }
 #salgsseksjon p {
-  background-image: url(../img/sale-on-shoes.jpg);
+  background-image: url(../img/sale-on-shoes-transparang.jpg);
   background-color: rgb(54, 173, 18);
   background-repeat: no-repeat;
   background-position: center;
@@ -499,7 +499,6 @@ img {
     margin: 0.8rem;
   }
   #salgsseksjon p {
-    background-image: url(../img/sale-on-shoes.jpg);
     background-color: rgb(54, 173, 18);
     background-repeat: no-repeat;
     background-position: center;
