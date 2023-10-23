@@ -31,6 +31,7 @@ body{
 
             h3{
                 text-align: center; 
+                font-size: 1.4rem;
             }
             
             #kundeservice-innhold{
@@ -56,7 +57,7 @@ body{
         grid-area: kontakt-oss; 
 
             #kontakt-oss-text{
-                font-size: 2.3rem; 
+                font-size: 1.4rem; 
             }
             
             #mail{
@@ -69,15 +70,13 @@ body{
             }
         }
         
-           
-
         #betalingsmåter{
             text-align: center; 
             grid-area: betalingsmåter; 
             margin: 3rem 0; 
 
             h4{
-                font-size: 1.5rem; 
+                font-size: 1.2rem; 
                 margin: 0.5rem 1rem; 
             }
 
@@ -94,7 +93,7 @@ body{
             grid-area: sosiale-medier; 
 
             h6{
-                font-size: 1.5rem; 
+                font-size: 1.2rem; 
                 margin: 0.5rem 0; 
         }
 
@@ -151,7 +150,7 @@ body{
         }
 
     #søksymbol{
-        padding: 12px; 
+        padding: 12px;
     }
 
     #søkebar{
@@ -843,7 +842,7 @@ img {
             grid-area: kontakt-oss;
             font-size: 1.8rem;  
             
-            h3{
+            #kontakt-oss-text{
                 font-size: 2.3rem; 
                 }
             
@@ -865,7 +864,7 @@ img {
                 margin-left: -4rem; 
 
                 h4{
-                    font-size: 1.5rem; 
+                    font-size: 1.7rem; 
                     margin: 0.5rem 1rem; 
                 }
 
@@ -886,7 +885,7 @@ img {
                 grid-area: sosiale-medier; 
 
                 h6{
-                    font-size: 1.5rem; 
+                    font-size: 1.7rem; 
                     margin: 0.5rem 0; 
                 }
 
@@ -1097,7 +1096,6 @@ img {
             margin-right: 50px; 
         }
     }
-    
 }
 
 
