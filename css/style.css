@@ -494,4 +494,158 @@ img {
     color: black;
     margin: 0.8rem;
   }
+  #salgsseksjon p {
+    background-image: url(../img/sale-on-shoes.jpg);
+    background-color: rgb(54, 173, 18);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 2rem;
+    font-weight: 600;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    padding: 12rem;
+    margin: 32px 10px 5px 10px;
+  }
+  #nyhetseksjon {
+    grid-template-areas: "nyheter nyheter nyheter nyheter" "støvel-img joggesko-img pensko-img tursko-img" "støvel-text joggesko-text pensko-text tursko-text";
+    gap: 30px;
+    padding: 0 10px;
+    margin: 20px 0px;
+  }
+  #nyhetseksjon h3 {
+    grid-area: nyheter;
+    text-align: center;
+    background-color: #7cb068;
+    padding: 15px 10px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 15px gray;
+    width: 35%;
+    justify-self: center;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  #nyhetseksjon a #pensko-nyheter {
+    grid-area: pensko-img;
+    height: 25em;
+  }
+  #nyhetseksjon #pensko-text {
+    grid-area: pensko-text;
+    margin: -15px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #nyhetseksjon img {
+    height: 25em;
+  }
+  #nyhetseksjon #støvler-nyheter {
+    grid-area: støvel-img;
+    height: 25em;
+  }
+  #nyhetseksjon #støvler-text {
+    grid-area: støvel-text;
+    margin: -15px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #nyhetseksjon #joggesko-nyheter {
+    grid-area: joggesko-img;
+    height: 25em;
+  }
+  #nyhetseksjon #joggesko-text {
+    grid-area: joggesko-text;
+    margin: -15px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #nyhetseksjon #tursko-nyheter {
+    grid-area: tursko-img;
+    height: 25em;
+  }
+  #nyhetseksjon #tursko-text {
+    grid-area: tursko-text;
+    margin: -15px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #tips-og-tricks {
+    grid-template-areas: "tursko-brune tursko-svarte støvler-svarte" "tursko-brune-text tursko-svarte-text støvler-svarte-text";
+    gap: 10px;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+  #tips-og-tricks img {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+  }
+  #tips-og-tricks #tursko-brune {
+    grid-area: tursko-brune;
+    height: 25em;
+  }
+  #tips-og-tricks #tursko-svarte {
+    grid-area: tursko-svarte;
+    height: 25em;
+  }
+  #tips-og-tricks #tursko-brune-text {
+    grid-area: tursko-brune-text;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #tips-og-tricks #tursko-svarte-text {
+    grid-area: tursko-svarte-text;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #tips-og-tricks #støvler-svarte {
+    grid-area: støvler-svarte;
+    height: 25em;
+  }
+  #tips-og-tricks #støvler-svarte-text {
+    grid-area: støvler-svarte-text;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .main-nav {
+    background-color: #5D8046;
+  }
+  .main-nav ol {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav ol li {
+    list-style: none;
+    align-self: center;
+    font-size: 1.8rem;
+  }
+  .main-nav ol #søksymbol {
+    padding: 12px;
+    font-size: 3rem;
+  }
+  .main-nav ol #søkebar input[type=text] {
+    padding: 10px;
+    margin: 10px;
+    border: solid thin black;
+    border-radius: 25px;
+  }
+  .main-nav ol #handlekurv {
+    padding: 12px;
+    font-size: 3rem;
+  }
+  .main-nav ol #hamburgermeny {
+    padding: 12px;
+    font-size: 3rem;
+  }
+  .main-nav #logo {
+    width: 100%;
+    max-width: 140px;
+    align-self: center;
+  }
 }/*# sourceMappingURL=style.css.map */
