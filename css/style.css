@@ -44,10 +44,13 @@ body footer #kontakt-oss {
   text-align: center;
   grid-area: kontakt-oss;
 }
-body footer #mail {
+body footer #kontakt-oss #kontakt-oss-text {
+  font-size: 2.3rem;
+}
+body footer #kontakt-oss #mail {
   text-align: center;
 }
-body footer #send-mail {
+body footer #kontakt-oss #send-mail {
   align-self: center;
   color: black;
 }
@@ -58,7 +61,7 @@ body footer #betalingsmåter {
   font-size: 2rem;
 }
 body footer #betalingsmåter h4 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin: 0.5rem 1rem;
 }
 body footer #betalingsmåter #applepay-betalings-ikon {
@@ -69,7 +72,7 @@ body footer #sosiale-medier {
   grid-area: sosiale-medier;
 }
 body footer #sosiale-medier h6 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 body footer #sosiale-medier ol {
@@ -647,5 +650,133 @@ img {
     width: 100%;
     max-width: 140px;
     align-self: center;
+  }
+  #top-bar {
+    padding: 0 0.8rem;
+    font-size: 0.9rem;
+  }
+  #top-bar #pakke {
+    align-self: center;
+    font-size: 1.9rem;
+    margin-right: 0.5rem;
+  }
+  #top-bar #applepay {
+    align-self: center;
+    font-size: 2.5rem;
+    margin: 0 0.5rem 0 auto;
+  }
+  #top-bar #headset {
+    align-self: center;
+    font-size: 2rem;
+    margin: 0 0.5rem 0 auto;
+  }
+  #top-bar .header-text {
+    font-size: 1.5rem;
+  }
+  body footer {
+    grid-area: footer;
+    background-color: #5D8046;
+    display: grid;
+    grid-template-areas: "kundeservice . kontakt-oss" "betalingsmåter . sosiale-medier" "logo . .";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body footer #kundeservice {
+    grid-area: kundeservice;
+  }
+  body footer #kundeservice h3 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  body footer #kundeservice #kundeservice-innhold {
+    margin-left: 30px;
+  }
+  body footer #kundeservice #kundeservice-innhold li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  body footer #kundeservice #kundeservice-innhold li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  body footer #kundeservice #kundeservice-innhold li a i {
+    margin-right: 8px;
+    font-size: 2.5rem;
+  }
+  body footer #kundeservice #kundeservice-innhold li i {
+    margin-right: 8px;
+    font-size: 2.5rem;
+  }
+  body footer #kontakt-oss {
+    text-align: center;
+    grid-area: kontakt-oss;
+    font-size: 1.8rem;
+  }
+  body footer #kontakt-oss h3 {
+    font-size: 2.3rem;
+  }
+  body footer #kontakt-oss #mail {
+    text-align: center;
+  }
+  body footer #kontakt-oss #send-mail {
+    align-self: center;
+    color: black;
+  }
+  body footer #betalingsmåter {
+    text-align: center;
+    grid-area: betalingsmåter;
+    margin: 3rem 0;
+    margin-left: -4rem;
+  }
+  body footer #betalingsmåter h4 {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+  }
+  body footer #betalingsmåter i {
+    font-size: 2.7rem;
+  }
+  body footer #betalingsmåter #applepay-betalings-ikon {
+    font-size: 3.3rem;
+  }
+  body footer #sosiale-medier {
+    justify-self: center;
+    grid-area: sosiale-medier;
+  }
+  body footer #sosiale-medier h6 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  body footer #sosiale-medier ol {
+    margin: 0;
+    padding: 0;
+  }
+  body footer #sosiale-medier ol li {
+    font-size: 1.3rem;
+  }
+  body footer #sosiale-medier ol li a {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-decoration: none;
+  }
+  body footer #sosiale-medier ol li a i {
+    margin-right: 8px;
+    align-self: center;
+    font-size: 2.5rem;
+  }
+  body footer #footer-logo {
+    width: 200px;
+    align-self: center;
+    height: 100px;
+    grid-area: logo;
+    margin: 0;
+  }
+  body footer ol li {
+    list-style: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -27,10 +27,18 @@
     margin-right: 8px; 
 }
 
-@mixin sosiale-medier-ikoner{
+@mixin sosiale-medier-ikoner-mobil{
     font-size: 1.5rem; 
 }
 
-@mixin betalings-ikoner{
+@mixin betalings-ikoner-mobil{
     font-size: 2rem; 
+}
+
+@mixin betalings-ikoner-desktop{
+    font-size: 2.7rem;
+}
+
+@mixin sosiale-medier-ikoner-desktop{
+    font-size: 2.5rem; 
 }
