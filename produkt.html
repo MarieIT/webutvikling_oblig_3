@@ -17,15 +17,17 @@
         <header>
             <figure id="top-bar">
                 <i class="fa-regular fa-box" id="pakke"></i> 
-                <p> 3-5 dager levering </p>
+                <p class="header-text"> 3-5 dager levering </p>
                 <i class="fa-brands fa-apple-pay" id="applepay"></i>
-                <p> Betaling med applepay </p>
+                <p class="header-text"> Betaling med applepay </p>
+                <i class="fa-solid fa-headset hide-on-phone" id="headset"></i>
+                <p class="hide-on-phone header-text"> Rask kundeservice </p>
             </figure>
             <!--Toppmenyen, logo klikkbar, går til hjemsiden-->
             <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
             <nav class="main-nav">
                 <ol>
-                    <li>
+                    <li id="logo-liste">
                         <a href="index.html">
                             <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="logo">
                         </a>
@@ -39,6 +41,11 @@
                     <li>
                         <i class="fa-solid fa-bars" id="hamburgermeny"></i>
                         <a href="#"></a>
+                    </li>
+                    <li id="søkebar">
+                        <form action="produkt.html" class="hide-on-phone">
+                            <input type="text" id="search" placeholder="søk her..." name="søkebar">
+                        </form>
                     </li>
                 </ol>
             </nav>         
@@ -98,7 +105,7 @@
                 </ol>
                 
                 <!--Legg i handlekurv-->
-                <figure id="handlekurv">
+                <figure id="handlekurv-produkt-side">
                     <a href="#"> 
                      <i class="fa-solid fa-basket-shopping"></i>
                     <p>Legg i handlekurv</p>
@@ -111,6 +118,8 @@
                     <li>Adidas</li>
                     <li>Pensko</li>
                     <li>Komfortabel</li>
+                    <li class="hide-on-phone">Lette</li>
+                    <li class="hide-on-phone">Fargerike</li>
                 </ol>
             
                 <!--Liste med beskrivelse og finn i butikk-->
@@ -147,7 +156,7 @@
                 </ol>
             </section>
             <section id="kontakt-oss">
-                <h3>Kontakt oss</h3>
+                <h3 id="kontakt-oss-text">Kontakt oss</h3>
                 <p id="mail">Mail</p>
                 <a id="send-mail" href="mailto:skodegmiljovennlig@gmail.com">Send mail</a>
             </section>
@@ -186,7 +195,7 @@
                     </li>  
                 </ol>
             </section>
-            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
+            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="footer-logo">
         </footer>
     </body>
 </html>

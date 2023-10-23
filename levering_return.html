@@ -13,38 +13,45 @@
         </title>
     </head>
     <body>
-    <!-- Alle ikoner er hentet fra fontawesome-->
-    <!--Toppbaren til nettsiden, ikke klikkbar, kun for informasjon-->
-    <!--Teksten til levering/retur er hentet fra Lorum Ipsum (lipsum.com)-->
-            <header>
-                <figure id="top-bar">
-                    <i class="fa-regular fa-box" id="pakke"></i> 
-                    <p> 3-5 dager levering </p>
-                    <i class="fa-brands fa-apple-pay" id="applepay"></i>
-                    <p> Betaling med applepay </p>
-                </figure>
-                <!--Toppmenyen, logo klikkbar, går til hjemsiden-->
-                <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
-                <nav class="main-nav">
-                    <ol>
-                        <li>
-                            <a href="index.html">
-                                <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="logo">
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-magnifying-glass" id="søksymbol"></i>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-basket-shopping" id="handlekurv"></i>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-bars" id="hamburgermeny"></i>
-                            <a href="#"></a>
-                        </li>
-                    </ol>
-                </nav>         
-            </header>
+        <!-- Alle ikoner er hentet fra fontawesome-->
+        <!--Toppbaren til nettsiden, ikke klikkbar, kun for informasjon-->
+        <!--Teksten til levering/retur er hentet fra Lorum Ipsum (lipsum.com)-->
+        <header>
+            <figure id="top-bar">
+            <i class="fa-regular fa-box" id="pakke"></i> 
+            <p class="header-text"> 3-5 dager levering </p>
+            <i class="fa-brands fa-apple-pay" id="applepay"></i>
+            <p class="header-text"> Betaling med applepay </p>
+            <i class="fa-solid fa-headset hide-on-phone" id="headset"></i>
+            <p class="hide-on-phone header-text"> Rask kundeservice </p>
+            </figure>
+            <!--Toppmenyen, logo klikkbar, går til hjemsiden-->
+            <!--Logoen (skodegmiljøvennlig) er tatt fra Figma prototypen min i oblig 2-->
+            <nav class="main-nav">
+                <ol>
+                    <li id="logo-liste">
+                        <a href="index.html">
+                        <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass" id="søksymbol"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-basket-shopping" id="handlekurv"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars" id="hamburgermeny"></i>
+                        <a href="#"></a>
+                    </li>
+                    <li id="søkebar">
+                        <form action="produkt.html" class="hide-on-phone">
+                        <input type="text" id="search" placeholder="søk her..." name="søkebar">
+                        </form>
+                    </li>
+            </ol>
+        </nav>         
+    </header>
             
             <!--Navigasjon mellom kategorier, herre, dame og barn-->
             <nav class="category">
@@ -101,7 +108,7 @@
                 </ol>
             </section>
             <section id="kontakt-oss">
-                <h3>Kontakt oss</h3>
+                <h3 id="kontakt-oss-text">Kontakt oss</h3>
                 <p id="mail">Mail</p>
                 <a id="send-mail" href="mailto:skodegmiljovennlig@gmail.com">Send mail</a>
             </section>
@@ -140,7 +147,7 @@
                     </li>  
                 </ol>
             </section>
-            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig">
+            <img src="img/skodegmiljovennlig-logo.png" alt="logo til skodegmiljøvennlig" id="footer-logo">
         </footer>
     </body>
 </html>
